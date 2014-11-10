@@ -1,0 +1,50 @@
+# Lists #
+
+In addition to having data types that store one piece of information. Python has data types which store a multiple items.
+
+    >>> letters = ['a', 'b', 'c']
+
+The indexing syntax we used on strings also works with lists:
+
+    >>> s = "some string"
+    >>> s[1]
+    'o'
+    >>> s[1:3]
+    'om'
+    >>> letters[1]
+    'b'
+    >>> letters[1:3]
+    ['b', 'c']
+
+You can get the length of a list using the len() function like you can with a string:
+
+    >>> len(letters)
+    3
+
+You can do other things to lists as well:
+
+Add an element
+
+    >>> letters.append("z")
+    >>> print letters
+    ['a', 'b', 'c', 'z']
+
+Remove an element
+
+    >>> letters.remove("z")
+    >>> print letters
+    ['a', 'b', 'c']
+
+Test to see if an element is in the list
+
+    >>> "a" in letters
+    True
+    >> "w" in letters
+    False
+
+You can use lists to store anything you’d like:
+
+    >>> string_list = ["tomatoes", "cheese", "milk"]
+    >>> boolean_list = [True, True, False]
+    >>> mixed_list = [5, "words", False]
+    >>> nested_list = [5, ["words", False]]

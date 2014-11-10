@@ -1,0 +1,6 @@
+<div class="exercises">
+1. Try a testing out the operators above with strings instead of numbers. 
+2. Try true/false comparisons with these operators: `<=`, `<>`
+3. Try to string multiple comparisons together (e.g. `not (True and False)`, `4 > 3 and 3 > 3`).
+4. See what happens when you use `=` instead of `==`.
+</div>

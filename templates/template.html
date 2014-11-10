@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="date" content="$date-meta$" />
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+  <!--link rel="stylesheet" type="text/css" href="tutorial.css"-->
+  <style type="text/css">code{white-space: pre;}</style>
+
+  <style type="text/css">
+    body {
+        font-family: Georgia, "Times New Roman";
+        font-size: 1.17em;
+        color: #333;
+        background-color: #333;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        width: 990px;
+        margin: auto;
+        background-color: #ffffec;
+        padding: 1em;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    code {
+        font-family: Courier;
+    }
+
+    .file, pre {
+        font-family: Courier;
+        margin: 1em 26px 0 26px;
+        background-color: #ddd;
+        display: inline-block;
+        min-width: 50%;
+        box-sizing: border-box;
+    }
+
+    pre {
+        padding: 1em;
+    }
+
+    .file pre {
+        margin: 0;
+        padding: 0;
+    }
+
+    .name {
+        padding: .25em 1em 0 1em;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+        display: block;
+    }
+
+    .content {
+        padding: 1em;
+    }
+
+    h3 {
+
+    }
+
+    .exercises {
+        margin: 1em 26px 0 26px;
+        padding: 1em 1em 0 0;
+        background-color: #bbf;
+        border-radius: 1em;
+        display: inline-block;
+        min-width: 40%;
+    }
+
+    .exercises::before {
+        font-weight: bold;
+        content: "Exercises";
+        margin-left: 2.5em;
+    }
+
+    ol {
+        padding-left: 2.5em;
+    }
+
+    .left_col {
+        float:left;
+        width:49%;
+        margin: 0 1% 1em 0;
+    }
+
+    .right_col {
+        float:right;
+        width:49%;
+        margin: 0 0 1em 1%;
+    }
+
+    dt {
+        font-weight: bold;
+        width: 20%;
+        display: inline-block;
+    }
+
+    dd {
+        display: inline-block;
+    }
+  </style>
+
+$if(quotes)$
+  <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+$endif$
+$if(highlighting-css)$
+  <style type="text/css">
+$highlighting-css$
+  </style>
+$endif$
+$for(css)$
+  <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
+$endfor$
+$if(math)$
+  $math$
+$endif$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+<div class="container">
+$for(include-before)$
+$include-before$
+$endfor$
+$if(title)$
+<div id="$idprefix$header">
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<h1 class="subtitle">$subtitle$</h1>
+$endif$
+$for(author)$
+<h2 class="author">$author$</h2>
+$endfor$
+$if(date)$
+<h3 class="date">$date$</h3>
+$endif$
+</div>
+$endif$
+$if(toc)$
+<div id="$idprefix$TOC">
+$toc$
+</div>
+$endif$
+
+<div id="$idprefix$index">
+$if(before)$
+<a href="/$before$/index.html">$before$</a> | 
+$endif$
+<a href="/index.html">All lessons</a>
+$if(after)$
+| <a href="/$after$/index.html">$after$</a>
+$endif$
+</div>
+
+
+$body$
+$for(include-after)$
+$include-after$
+$endfor$
+</div>
+</body>
+</html>

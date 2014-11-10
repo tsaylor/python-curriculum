@@ -1,0 +1,5 @@
+<div class="exercises">
+17. Get this program to ask for a person’s favorite animal (in the plural), and the noise the animal makes, and then sing them Old McDonald.
+18. Rename the animals variable in your program to fauna. What error do you get if you forget to change all the occurrences of the variable?
+19. What are alternate ways to write this program. Could you use the escaped new line (\\n)? Could you store other repeated parts as variables?
+</div>

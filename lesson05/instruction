@@ -1,0 +1,19 @@
+# Square Brackets #
+
+If you want to get a character in a certain position in a string, you can use square brackets.
+
+    >>> "Hello World"[0]
+    "H"
+    >>> "Hello World"[-1]
+    "d"
+    >>> "Hello World"[1:7]
+    "ello W"
+    >>> "Hello World"[1:9999999]
+    "ello World"
+    >>> "Hello World"[1:]
+    "ello World"
+    >>> "Hello World"[1:-1]
+    "ello Worl"
+    >>> "Hello World"[0:-1:2]
+
+If you imagine a number above each character in a string, you can access a character or set of characters through the square brackets using the associated numbers. The numbers are called the index, and accessing the string through the square brackets is called *indexing*.

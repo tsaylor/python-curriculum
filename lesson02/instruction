@@ -1,0 +1,16 @@
+# Integers #
+
+Let's start with some simple math in the Python shell. Run the following:
+
+    >>> 1 + 1
+    2
+    >>> 1 - 2
+    -1
+    >>> 2 * 2
+    4
+    >>> 6 / 3
+    2
+    >>> 2 ** 3
+    8 
+
+Each of these math expressions is evaluated, and the result is displayed on the next line.  The `**` operator is for exponents; two to the third power is eight.

@@ -1,0 +1,16 @@
+# Loops #
+
+Sometimes you might want to do something more than once in your program. You can use a `for` loop to do that. Try the code below. (To get out of your for loop in the python shell, enter a blank line.)
+
+    >>> for i in [5, 4, 3, 2, 1]:
+    ...     print i
+    ...
+
+It ran your print statement once for each item in the list, and referred to that item with the variable `i`. What if you didn't have a pre-defined list though? With a `while` loop you can keep executing a block of code until a condition is met.
+
+    >>> i = raw_input("starting number: ")
+    >>> i = int(i)
+    >>> while i > 0:
+    ...     print i
+    ...     i = i - 1
+    ... 

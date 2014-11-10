@@ -1,0 +1,9 @@
+# Input #
+
+You can get Python to prompt you for a value with the `raw_input()` function. Write a statement to ask for your name, and then to say hello to yourself:
+
+    >>> name = raw_input("What is your name?\n")
+    What is your name?
+    <type in your name>
+    >>> print "Hi " + name
+    "Hi <your name>"

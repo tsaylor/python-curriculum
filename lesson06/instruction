@@ -1,0 +1,25 @@
+# Variables #
+
+Python can store a value and name it so you can use it later in your program. This is called a *variable*. Any type of value can be assigned to a variable with the `=` operator.
+
+    >>> number = 7
+    >>> print number
+    7
+    >>> name = "Chewbacca"
+    >>> print name
+    Chewbacca
+
+Variables can be used in the same ways as the values we were using before.
+
+    >>> name + ' and Han'
+    'Chewbacca and Han'
+    >>> name.swapcase()
+    'cHEWBACCA'
+    >>> print name
+    Chewbacca
+
+Notice that the variable was unchanged by the previous commands. To replace the value of the variable with the value returned from `.swapcase()`, you would have to assign that value back to the variable, like this:
+
+    >>> name = name.swapcase()
+    >>> print name
+    'cHEWBACCA'

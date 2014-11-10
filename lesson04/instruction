@@ -1,0 +1,28 @@
+# Manipulating Strings #
+
+Python can manipulate strings with some of the math operators. Try these:
+
+    >>> "hello" + "world"
+    "helloworld"
+    >>> "spam " * 3
+    "spam spam spam "
+
+When you add or multiply strings together it's called *concatenation*. 
+
+Python strings also have functions you can call to manipulate them. Let's see what some of them do:
+
+    >>> "hello world".capitalize()
+    "Hello world"
+    >>> "hello world".title()
+    "Hello World"
+    >>> "hello world".islower()
+    True
+    >>> "Hello World".islower()
+    False
+    >>> "Hello World".swapcase()
+    "hELLO wORLD"
+
+There are many more string functions listed [in the Python documentation](https://docs.python.org/2/library/stdtypes.html#string-methods). Look them over and try a few out. Also try using the built-in len() function on a string. It returns the length of the given string.
+
+    >>> len("hello")
+    5

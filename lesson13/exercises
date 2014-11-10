@@ -1,0 +1,17 @@
+<div class="exercises">
+1. Use a for loop to get the computer to print:
+    1 little monkeys
+    2 little monkeys
+    3 little monkeys
+2. Modify your loop to use words (one, two, three) instead of numbers.
+3. Find out how the [built-in range function](https://docs.python.org/2/library/functions.html) works.  Use it to create a list.
+4. Use a loop to write a function that takes a list of numbers and prints out the sum of all those numbers. [Bonus] Write a function that computes the average of all the numbers. What happens when you give these functions a list of strings?
+5. [Challenge] Take in a list of words and print out a numbered list. (Hint: You will have to use `len()` and `range()`)
+6. [Challenge] Write a function to print out a right justified Mario staircase of a height specified in the function argument. A staircase of height 4 is below:
+```
+      # #
+    # # #
+  # # # #
+# # # # #
+```
+</div>

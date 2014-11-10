@@ -1,0 +1,6 @@
+<div class="exercises">
+13. Assign your own name to the variable "name"
+14. Have the computer greet you personally using the variable "name"
+15. The Washington Monument opened in 1885. Assign that year to a variable and the current year to another variable. Use them to calculate how long it's been open.
+16. Call the .swapcase() method on "name"
+</div>

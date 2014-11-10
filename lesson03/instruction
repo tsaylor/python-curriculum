@@ -1,0 +1,15 @@
+# Strings #
+
+Python expressions can also included quoted strings. Enter one in the Python shell:
+
+    >>> "hello"
+    "hello"
+
+Your expression was evaluated to a string value (or a *string literal*, as they're usually called), so the shell returned it as the result. 
+
+Now let's use the `print` command with a string and see what happens:
+
+    >>> print "hello"
+    hello
+
+Your string is printed again, but notice this time it is not in quotes. That's because it wasn't returned as the result of your expression (print statements have no result to return). Instead, when the print statement was evaluated it's primary action was to display your string on the screen.

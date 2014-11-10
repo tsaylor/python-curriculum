@@ -1,0 +1,5 @@
+<div class="exercises">
+5. Start with the strings "de" and "ed", and print out "deed deed deed deed deed ".
+6. Write a statement to replace "Hello" with "Bonjour" in the string "Hello World". There is a function in the Python documentation linked above that will help with this.
+7. What happens if you try `print "forgot the close the string` and press enter?. How do you continue?
+</div>

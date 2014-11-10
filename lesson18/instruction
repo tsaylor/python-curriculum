@@ -1,0 +1,35 @@
+# Reading and Writing from Files #
+
+We can read and write to files from python.  This is the code for opening a new file:
+
+    >>> fid = open("/path/filename.txt", "w")
+
+Where `path` is the path to some directory on your computer. The second argument, `"w"`, tells Python to open this file and let us write in it. Try:
+
+    >>> print fid
+
+That's python's internal representation of your file, usually called a *file handle*. It's an object just like everything else, so it has functions we can call like `.write()`, which writes a string into the file. Try that now:
+
+    >>> fid.write("blah blah blah there is content in this file.\n”)
+    >>> fid.write(“This is the second line of the file.\n") #  \n creates a new line.
+
+Always close the file handle when you are done working with it:
+
+    >>> fid.close()
+
+Now find the file on your computer and open it in a text editor or word processor. Is the text you just wrote there? Close the file before continuing.
+
+Open the same file for reading by using an `"r"` for the second argument:
+
+    >>> fid = open("/path/filename.txt", "r")
+    >>> fid.read()
+
+The whole content of the file is returned, and could be saved in a variable for processing. Also note that a file handle keeps track of how much of the file has been read and won't read it twice. If you try to read it again, you get an empty string.
+
+    >>> fid.read()
+    ''
+
+If you want to read the file again, you'll have to reset the file handle's internal pointer using the `.seek()` method:
+
+    >>> fid.seek(0)  # the 0 tells the file handle to start at the first character
+    >>> fid.read()

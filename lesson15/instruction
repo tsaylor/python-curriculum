@@ -1,0 +1,22 @@
+# Dictionaries #
+
+Dictionaries are data structures that allow you access data based on "keys" instead of position. For example, a phone book associates phone numbers with names.
+
+    >>> phone_book = {'Alice': 1234567, 'Bob': 1234568, 'Carol': 1234569}
+    >>> phone_book['Bob']
+    1234568
+    >>> phone_book['Bob'] = 9876543  # update an entry
+    >>> phone_book
+    {'Bob': 9876543, 'Carol': 1234569, 'Alice': 1234567}
+    >>> phone_book['Daphne'] = 1234570
+    >>> phone_book
+    {'Daphne': 1234570, 'Bob': 9876543, 'Carol': 1234569, 'Alice': 1234567}
+
+Just like lists and strings, dictionaries have methods.
+
+    >>> phone_book.keys()
+    ['Daphne', 'Bob', 'Carol', 'Alice']
+    >>> phone_book.pop('Bob')
+    1234568
+    >>> phone_book
+    {'Daphne': 1234570, 'Carol': 1234569, 'Alice': 1234567}

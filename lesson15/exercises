@@ -1,0 +1,4 @@
+<div class="exercises">
+1. Use a dictionary data structure to create a very small regular dictionary that associates three words with their definitions.
+2. Use the `.has_key()` method to check if a word is in your dictionary.
+</div>

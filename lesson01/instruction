@@ -1,0 +1,36 @@
+# Python in Interactive Mode #
+
+## Open your computer's command line interface ##
+
+<div class="two_col">
+<div class="left_col">
+### Windows ###
+Open the run dialog (Windows key + r) and run the command "cmd". A window will open with a prompt like this:
+
+    C:\>
+
+</div>
+<div class="left_col">
+### Mac ###
+From the spotlight, search for "terminal" and run the application. A window will open with a prompt something like this:
+
+    username@computername:~$
+</div>
+</div>
+
+This is the *system shell*. You will use this to run the Python interactive interpreter and Python programs. In this document, we will represent commands intended to be run in the system shell with the `$` character, like so:
+
+    $ <command to be run>
+
+## Open the Python interactive shell ##
+
+At the system shell, run the following:
+
+    $ python
+    Python 2.7.5 (default, Mar  9 2014, 22:15:05)
+    [GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>>
+
+You will see something like the output above. The `>>>` is the prompt for the Python interactive shell. You can think of this as an interactive Python program. You can execute Python statements and see the result immediately.
+

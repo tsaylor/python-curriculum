@@ -1,0 +1,19 @@
+# Data Types #
+
+When you use variables, it's less clear if it contains a string, an integer, or some other type of value. Let's see what happens when we try to concatenate a string with an integer.
+
+    >>> name = 'king arthur'
+    >>> number = 5
+    >>> name + number
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    TypeError: cannot concatenate 'str' and 'int' objects
+
+This statement has caused an error: `cannot concatenate 'str' and 'int' objects`. 'str' and 'int' refer to the string and integer *data types*. The variable `name` has a string data type and the variable `number` has an integer data type. This error is saying that you can't concatenate a string and an integer, because concatenation is only for strings. If you reversed the order of the variables in that command you would get a different error:
+
+    >>> number + name
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+This error is saying that you can't add an integer to a string, because strings aren't valid for addition. Since the operator for addition and concatenation is the same, it determines which one you want to do by the data type of the first variable. 

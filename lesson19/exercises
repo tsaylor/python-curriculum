@@ -1,0 +1,4 @@
+<div class="exercises">
+1. Here's a link to a [CSV file with Google's stock prices](http://real-chart.finance.yahoo.com/table.csv?s=GOOG&a=09&b=1&c=2014&d=09&e=31&f=2014&g=d&ignore=.csv) for October 2014. Download the file and write a program to read the data and print the average value in the "Close" column.
+2. Here's a link to the [readme file for the Python source code](https://raw.githubusercontent.com/python/cpython/master/README).  Download the file and write a program to read the data and print the most common word in the file.  Hint: use a dictionary to keep track of how many times each word occurs.
+</div>

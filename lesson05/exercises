@@ -1,0 +1,7 @@
+<div class="exercises">
+8. Return only the 3rd character in a string. (Remember that indexes begin with zero.)
+9. What does `"string"[0:0]` return?
+10. What about `"string"[0:]`, `"string"[::-1]` or `"string"[:]`?
+11. Try `"string"[0:-1:2]`.
+12. How would you get every third letter in a string? 
+</div>

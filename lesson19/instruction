@@ -1,0 +1,34 @@
+# Processing Data After Reading #
+
+Open your file from before for reading and call `.readlines()` on it to get a list of lines in the file.
+
+    >>> data = fid.readlines()
+    >>> print data
+    ['blah blah blah there is content in this file.\n', 'This is the second 
+    line of the file.\n']
+
+It's common to loop over the lines of a file and do something with each one.
+
+    >>> for line in data:
+    ...     print line
+    ...
+    blah blah blah there is content in this file.
+
+    This is the second line of the file.
+
+Notice that it printed the `\n` as a new line, and then included another new line like the print statement normally does.
+
+We can call `.split()` on each line to turn it into a list of words. By default, `.split()` separates the line on any whitespace character.
+
+    >>> for line in data:
+    ...     linelist = line.split()
+    ...     print linelist
+    ...
+    ['blah', 'blah', 'blah', 'there', 'is', 'content', 'in', 'this', 'file.']
+    ['This', 'is', 'the', 'second', 'line', 'of', 'the', 'file.']
+
+If your file was a CSV file (Comma Separated Values), you might follow this process to load the data.
+
+    >>> for line in fid.readlines():
+    ...     for val in line.split(',')  # splits on commas
+    ...         print val  # ... or do whatever processing

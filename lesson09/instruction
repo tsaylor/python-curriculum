@@ -1,0 +1,47 @@
+# Saving Programs #
+
+As your programs get longer you'll want to save them, so we’ll move to a text editor. Save the following program as "hello.py" in your text editor of choice.
+
+<div class="file"><div class="name">hello.py</div><div class="content">
+    name = raw_input("What is your name?\n")
+    print "Nice to meet you " + name
+</div></div>
+
+In the system shell, move to the folder where you saved hello.py with the `cd <folder name>` command. Run your python program with `python hello.py`.
+
+    $ cd my_programs
+    $ python hello.py
+    What is your name?
+    <type in your name>
+    "Hi <your name>"
+    $
+
+Try writing a longer program and running it.
+
+<div class="file"><div class="name">oldmcdonald.py</div><div class="content">
+    # Sing Old McDonald
+    print "Old McDonald had a farm"
+    print "Ee i ee i oh"
+    print "And on his farm he had some chickens"
+    print "Ee i ee i oh"
+    print "With a cluck cluck here"
+    print "And a cluck cluck there"
+    print "Old McDonald had a farm"
+    print "Ee i ee i oh"
+</div></div>
+
+Let's modify the program to use variables for the animal and the sound it makes.
+
+<div class="file"><div class="name">oldmcdonald.py</div><div class="content">
+    # Sing Old McDonald
+    animals = "cows"
+    noise = "moo moo"
+    print "Old McDonald had a farm"
+    print "Ee i ee i oh"
+    print "And on his farm he had some " + animals
+    print "Ee i ee i oh"
+    print "With a " + noise + " here"
+    print "And a " + noise + " there"
+    print "Old McDonald had a farm"
+    print "Ee i ee i oh"
+</div></div>

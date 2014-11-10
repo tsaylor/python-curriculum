@@ -1,0 +1,14 @@
+# Functions #
+
+Sometimes it’s useful to re-use code in multiple places. This can be done by writing and calling a function. Where a function's code begins and ends is defined by indentation, so take care to make it consistent! (Using four spaces is the preferred way to indent. Your text editor can be set to do that when you press the tab key.)
+
+Write a function that will sing birthday song:
+
+    >>> def sing_happy_birthday(name):
+    ...     happy = "Happy Birthday to "
+    ...     print happy + "you"
+    ...     print happy + "you"
+    ...     print happy + name
+    ...     print happy + "you"
+    ...
+    >>> sing_happy_birthday("Molly")

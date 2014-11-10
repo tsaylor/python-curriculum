@@ -1,0 +1,14 @@
+# Comparison Operators and Booleans #
+
+For reasons we shall see shortly, sometimes we need to know if a statement is true or false.
+
+Try in the Python shell:
+
+    >>> 6 > 4
+    >>> 6 == 6
+    >>> 6 != 6
+    >>> True and True
+    >>> True or False
+    >>> not True
+
+All these expressions return a *boolean*, which is a *data type* that has a number of special uses. All the boolean operators are listed [here](https://docs.python.org/2/library/stdtypes.html#boolean-operations-and-or-not).

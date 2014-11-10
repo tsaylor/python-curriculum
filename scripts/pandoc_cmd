@@ -1,0 +1,6 @@
+autogen one file
+while true; do pandoc -s -f markdown -t html --template=template.html -o tutorial.html lesson1/instruction; sleep 5; done
+
+
+all lessons - instructions + exercises
+ls . | grep lesson | sed -e 's/\(lesson.*\)/\1\/instruction \1\/exercises hr /' | tr -d '\n' | xargs pandoc -s -f markdown -t html --template=template.html -o allinone.html

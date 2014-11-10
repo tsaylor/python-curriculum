@@ -1,0 +1,17 @@
+# Introduction to the Python Standard Library #
+
+Python has built in functions like `int()` and `str()` that we learned above. Python is also distributed with a standard library of additional functions. These functions are organized into *modules* and you have to tell Python when you want to use a module.  We're going to try out the `random` module.
+
+`random` has a function called `choice()` that returns a random element from a list. Try it out like this: 
+
+    >>> random.choice([1, 2, 3, 4, 5])
+
+You got an error saying `NameError: name 'random' is not defined`, right? The statement was right, we just hadn't *imported* the `random` library yet. Even though the `random` library comes standard with Python, you have to explicitly include it before you have access to it's functions. Let's try that again, but we'll import the library this time.
+
+    >>> import random
+    >>> random.choice([1, 2, 3, 4, 5])
+    3
+
+You probably didn't get `3` when you ran `random.choice()` since it's selecting a random value to return. Try running that statement a few times to see that happen.
+
+In the Python documentation you can find a complete list [functions in the standard library](http://docs.python.org/library/) and an [index of all the modules you can import](https://docs.python.org/2/py-modindex.html) with a brief description of what they do.
