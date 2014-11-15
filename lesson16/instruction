@@ -2,9 +2,9 @@
 
 In the loop examples above, we used a loop to iterate over a list. Loops can also iterate over a dictionaries.
 
-    >>> phoneBook = {'Alice': 1234567, 'Bob': 1234568, 'Carol': 1234569}
+    >>> phoneBook = {'Alice': '1234567', 'Bob': '1234568', 'Carol': '1234569'}
     >>> for k in phoneBook:
-    ...     print(phoneBook[k])
+    ...     print phoneBook[k]
     ...
     1234568
     1234569
