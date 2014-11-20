@@ -3,7 +3,7 @@
 You may want your program to behave differently depending on the input, for example maybe it is your birthday today.
 
     answer = raw_input("Is it your birthday? ")
-    if answer == "yes":
+    if answer.lower() == "yes":
         name = raw_input("What is your name? ")
         happy = "Happy Birthday to "
         print happy + "you"
@@ -13,3 +13,22 @@ You may want your program to behave differently depending on the input, for exam
     else:
         age_string = raw_input("How old are you? ")
         print "I am also " + age_string + " years old"
+
+In this example, the `if` statement checks the value of `answer`, and runs one block of code or the other depending on its value. Only one block is executed, not both.
+
+You can combine multiple `if` statements with an `elif`, like this:
+
+    answer = raw_input("Is it your birthday? ")
+    if answer.lower() == "yes":
+        name = raw_input("What is your name? ")
+        happy = "Happy Birthday to "
+        print happy + "you"
+        print happy + "you"
+        print happy + name
+        print happy + "you"
+    elif answer.lower() == "no":
+        age_string = raw_input("How old are you? ")
+        print "I am also " + age_string + " years old"
+    else:
+        print "You can't answer " + answer + " to a yes or no question!"
+
