@@ -15,7 +15,7 @@ def random_string():
         rand_num_list.append(random.randint(0,25))
     random_string = ''
     for num in rand_num_list:
-        random_string += letters[num]
+        random_string = random_string + letters[num]
     return random_string
 
 
