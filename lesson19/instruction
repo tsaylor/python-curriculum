@@ -30,5 +30,5 @@ We can call `.split()` on each line to turn it into a list of words. By default,
 If your file was a CSV file (Comma Separated Values), you might follow this process to load the data.
 
     >>> for line in fid.readlines():
-    ...     for val in line.split(',')  # splits on commas
+    ...     for val in line.split(','):  # splits on commas
     ...         print val  # ... or do whatever processing
